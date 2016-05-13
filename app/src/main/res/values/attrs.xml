@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SLoadingIndicatorView">
+        <attr name="s_indicator">
+            <flag name="DefaultScale" value="0"/>
+            <flag name="LineScale" value="1"/>
+            <flag name="LineScalePulseOut" value="2"/>
+            <flag name="LineScalePulseOutThree" value="3"/>
+
+        </attr>
+        <attr name="s_indicator_color" format="color"/>
+    </declare-styleable>
+
+</resources>

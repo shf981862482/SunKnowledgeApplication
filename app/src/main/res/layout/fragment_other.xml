@@ -1,0 +1,30 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.just.sun.model.OtherModel" />
+
+        <variable
+            name="listener"
+            type="com.just.sun.listener.OtherListener" />
+
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.just.sun.fragments.OtherFragment">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:itemView="@{model.itemView}"
+            app:items="@{model.items}"
+            app:setOnItemClickListener="@{listener.onItemClickListener}" />
+    </LinearLayout>
+</layout>

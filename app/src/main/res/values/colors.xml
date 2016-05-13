@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--ToolBar-->
+    <color name="primary">#FF03A9F4</color>
+    <!--工具栏-->
+    <color name="primary_dark">#FF0288D1</color>
+    <!--StatusBarCompat设置颜色-->
+    <color name="status_bar_color">@color/primary</color>
+    <color name="accent">#FF4081</color>
+
+    <color name="colortextbg">#8a939497</color>
+    <color name="loading_balck_bg">#84939497</color>
+    <color name="black_transparent_50">#7f1d1e1e</color>
+    <color name="white">#FFFFFF</color>
+</resources>

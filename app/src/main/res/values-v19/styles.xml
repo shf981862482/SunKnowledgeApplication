@@ -1,0 +1,6 @@
+<resources>
+    <!--主题是基于NoActionBar的   android:windowTranslucentStatus这个属性是v19开始引入的。(透明)-->
+    <style name="AppTheme" parent="@style/BaseAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>
