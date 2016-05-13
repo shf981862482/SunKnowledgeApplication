@@ -22,6 +22,7 @@ public class SunDanmuActivity extends Activity {
 
     private Button addTanmu;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
