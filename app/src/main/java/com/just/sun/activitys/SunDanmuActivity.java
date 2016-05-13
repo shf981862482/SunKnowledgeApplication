@@ -19,6 +19,7 @@ public class SunDanmuActivity extends Activity {
     DanmakuActionManager danmakuActionManager;
 
     private int count;
+
     private Button addTanmu;
 
     @Override
