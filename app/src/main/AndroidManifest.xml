@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.just.sun">
-
+    <!--直播权限-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
     <!-- //地图包、搜索包需要的基础权限 -->
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -56,6 +61,9 @@
         <activity android:name=".activitys.PropertyAnimationActivity" />
         <activity android:name=".activitys.DanmuActivity" />
         <activity android:name=".activitys.SunDanmuActivity" />
+        <activity android:name=".live.LiveMainActivity" />
+        <activity android:name=".live.LivePlayerDemoActivity" />
+        <activity android:name=".live.LivePublisherDemoActivity" />
     </application>
 
 </manifest>

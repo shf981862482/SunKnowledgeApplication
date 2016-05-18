@@ -1,1 +1,1 @@
-include ':app', ':vitamio', ':loading_library', ':AppTanmuDemo'
+include ':app', ':vitamio', ':loading_library'

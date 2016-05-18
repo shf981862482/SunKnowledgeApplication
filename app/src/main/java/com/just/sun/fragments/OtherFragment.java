@@ -77,6 +77,7 @@ public class OtherFragment extends Fragment {
         model.items.add(new SimpleModel("点赞"));
         model.items.add(new SimpleModel("属性动画"));
         model.items.add(new SimpleModel("sun弹幕"));
+        model.items.add(new SimpleModel("node_media_live"));
 
         listener = new OtherListener(model, binding);
     }

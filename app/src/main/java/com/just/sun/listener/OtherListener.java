@@ -13,6 +13,7 @@ import com.just.sun.activitys.PropertyAnimationActivity;
 import com.just.sun.activitys.SunDanmuActivity;
 import com.just.sun.activitys.ZanActivity;
 import com.just.sun.databinding.FragmentOtherBinding;
+import com.just.sun.live.LiveMainActivity;
 import com.just.sun.model.OtherModel;
 
 /**
@@ -54,6 +55,9 @@ public class OtherListener {
                     break;
                 case 7:
                     view.getContext().startActivity(new Intent(view.getContext(), SunDanmuActivity.class));
+                    break;
+                case 8:
+                    view.getContext().startActivity(new Intent(view.getContext(), LiveMainActivity.class));
                     break;
             }
         }

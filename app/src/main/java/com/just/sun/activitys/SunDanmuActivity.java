@@ -20,6 +20,7 @@ public class SunDanmuActivity extends Activity {
 
     private int count;
 
+
     private Button addTanmu;
 
 
