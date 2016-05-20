@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.just.sun">
-    <!--直播权限-->
+
+    <!-- 直播权限 -->
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
@@ -64,6 +66,11 @@
         <activity android:name=".live.LiveMainActivity" />
         <activity android:name=".live.LivePlayerDemoActivity" />
         <activity android:name=".live.LivePublisherDemoActivity" />
+        <activity android:name=".rs.MonoRsActivity" />
+        <activity
+            android:name=".jni.JniHelloActivity"
+            android:label="@string/title_activity_jni_hello" />
+        <activity android:name=".live.BiliPlayerActivity"></activity>
     </application>
 
 </manifest>

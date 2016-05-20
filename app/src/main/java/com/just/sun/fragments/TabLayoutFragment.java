@@ -71,17 +71,17 @@ public class TabLayoutFragment extends Fragment {
 
         fragmentList = new ArrayList<>();
         titles = new ArrayList<>();
-        fragmentList.add(HotFragment.newInstance("热门", null));
-        fragmentList.add(HotFragment.newInstance("特惠", null));
-        fragmentList.add(HotFragment.newInstance("门票", null));
-        fragmentList.add(HotFragment.newInstance("线路", null));
-        fragmentList.add(HotFragment.newInstance("国际", null));
+        fragmentList.add(HotFragment.newInstance("难得糊涂", null));
+        fragmentList.add(HotFragment.newInstance("明镜非台", null));
+        fragmentList.add(HotFragment.newInstance("一花一世界", null));
+        fragmentList.add(HotFragment.newInstance("一树一菩提", null));
+        fragmentList.add(HotFragment.newInstance("云卷云舒", null));
 
-        titles.add("热门");
-        titles.add("特惠");
-        titles.add("门票");
-        titles.add("线路");
-        titles.add("国际");
+        titles.add("难得糊涂");
+        titles.add("明镜非台");
+        titles.add("一花一世界");
+        titles.add("一树一菩提");
+        titles.add("云卷云舒");
 
         tabLayout.setTabMode(TabLayout.MODE_FIXED);//设置TabLayout的模式
         //        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);//设置TabLayout的模式

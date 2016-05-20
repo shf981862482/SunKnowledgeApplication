@@ -2,6 +2,7 @@ package com.just.sun.activitys;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.renderscript.RenderScript;
 
 import com.just.sun.R;
 

@@ -78,6 +78,8 @@ public class OtherFragment extends Fragment {
         model.items.add(new SimpleModel("属性动画"));
         model.items.add(new SimpleModel("sun弹幕"));
         model.items.add(new SimpleModel("node_media_live"));
+        model.items.add(new SimpleModel("renderscrip_mono"));
+        model.items.add(new SimpleModel("jni_hello"));
 
         listener = new OtherListener(model, binding);
     }

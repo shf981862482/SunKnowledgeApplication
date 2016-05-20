@@ -13,8 +13,10 @@ import com.just.sun.activitys.PropertyAnimationActivity;
 import com.just.sun.activitys.SunDanmuActivity;
 import com.just.sun.activitys.ZanActivity;
 import com.just.sun.databinding.FragmentOtherBinding;
+import com.just.sun.jni.JniHelloActivity;
 import com.just.sun.live.LiveMainActivity;
 import com.just.sun.model.OtherModel;
+import com.just.sun.rs.MonoRsActivity;
 
 /**
  * Created by walkingMen on 2016/4/27.
@@ -58,6 +60,12 @@ public class OtherListener {
                     break;
                 case 8:
                     view.getContext().startActivity(new Intent(view.getContext(), LiveMainActivity.class));
+                    break;
+                case 9:
+                    view.getContext().startActivity(new Intent(view.getContext(), MonoRsActivity.class));
+                    break;
+                case 10:
+                    view.getContext().startActivity(new Intent(view.getContext(), JniHelloActivity.class));
                     break;
             }
         }

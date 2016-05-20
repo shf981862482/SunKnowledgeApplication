@@ -1,1 +1,1 @@
-include ':app', ':vitamio', ':loading_library'
+include ':app', ':vitamio', ':loading_library', ':IjkplayerLib'
