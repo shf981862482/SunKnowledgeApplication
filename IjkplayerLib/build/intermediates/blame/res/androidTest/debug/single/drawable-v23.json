@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\WebDemo\\ijkplayer-master-demo\\ijkplayer-master-demo\\IjkplayerLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "C:\\WebDemo\\ijkplayer-master-demo\\ijkplayer-master-demo\\IjkplayerLib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "C:\\AndroidStudioProgram\\SunKnowledgeApplication\\IjkplayerLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "C:\\AndroidStudioProgram\\SunKnowledgeApplication\\IjkplayerLib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v23\\abc_control_background_material.xml"
+    }
+]
