@@ -12,4 +12,12 @@
         <attr name="s_indicator_color" format="color"/>
     </declare-styleable>
 
+    <!--连击的属性-->
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension"/>
+        <attr name="lianji_strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+    </declare-styleable>
+
 </resources>

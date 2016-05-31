@@ -79,12 +79,12 @@ public class TabLayoutFragment extends Fragment {
 
         titles.add("难得糊涂");
         titles.add("明镜非台");
-        titles.add("一花一世界");
-        titles.add("一树一菩提");
+        titles.add("花世界");
+        titles.add("树菩提");
         titles.add("云卷云舒");
 
-        tabLayout.setTabMode(TabLayout.MODE_FIXED);//设置TabLayout的模式
-        //        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);//设置TabLayout的模式
+//        tabLayout.setTabMode(TabLayout.MODE_FIXED);//设置TabLayout的模式
+        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);//设置TabLayout的模式
 
 
         //为TabLayout添加tab名称后这是icon
@@ -99,7 +99,5 @@ public class TabLayoutFragment extends Fragment {
         viewPager.setCurrentItem(0);
 
         tabLayout.setupWithViewPager(viewPager);
-
     }
-
 }
