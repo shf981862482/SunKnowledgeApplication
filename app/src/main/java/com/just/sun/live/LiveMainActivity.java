@@ -53,7 +53,8 @@ public class LiveMainActivity extends Activity implements OnClickListener {
 			SharedPreUtil.put(LiveMainActivity.this, "enablePlayLog", enablePlayCB.isChecked());
 			SharedPreUtil.put(LiveMainActivity.this, "enableVideo", enableVideoCB.isChecked());
 
-			LiveMainActivity.this.startActivity(new Intent(LiveMainActivity.this, LivePlayerDemoActivity.class));
+//			LiveMainActivity.this.startActivity(new Intent(LiveMainActivity.this, LivePlayerDemoActivity.class));
+			LiveMainActivity.this.startActivity(new Intent(LiveMainActivity.this, BiliPlayerActivity.class));
 			break;
 		case R.id.button2:
 			// 记住上次输入的发布地址，只在demo中使用，非SDK方法

@@ -96,7 +96,7 @@ public class LivePlayerDemoActivity extends Activity {
 		 * maxBufferTime为最大缓冲区，当遇到网络抖动，较大的maxBufferTime更加平滑，但延迟也会跟着增加。
 		 * 这个值关乎延迟的大小。
 		 */
-		int maxBufferTime = Integer.valueOf(SharedPreUtil.getString(this, "maxBufferTime"));;// 获取上一个页面设置的maxBufferTIme，非sdk方法
+		int maxBufferTime = Integer.valueOf(SharedPreUtil.getString(this, "maxBufferTime"));// 获取上一个页面设置的maxBufferTIme，非sdk方法
 		LivePlayer.setMaxBufferTime(maxBufferTime);
 
 		/**

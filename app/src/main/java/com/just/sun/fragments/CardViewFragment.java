@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.just.sun.R;
+import com.just.sun.activitys.LutScriptActivity;
+import com.just.sun.gpulutimage.GpuImageActivity;
 import com.just.sun.live.BiliPlayerActivity;
 
 
@@ -21,6 +23,7 @@ public class CardViewFragment extends Fragment implements View.OnClickListener {
     private String mParam2;
 
     private CardView card_view_player;
+    private CardView card_view_gpu_img;
 
 
     public CardViewFragment() {
@@ -56,7 +59,10 @@ public class CardViewFragment extends Fragment implements View.OnClickListener {
 
     private void init(View view) {
         card_view_player = (CardView) view.findViewById(R.id.card_view_player);
+        card_view_gpu_img = (CardView) view.findViewById(R.id.card_view_gpu_img);
         card_view_player.setOnClickListener(this);
+        card_view_gpu_img.setOnClickListener(this);
+        view.findViewById(R.id.card_view_lut).setOnClickListener(this);
     }
 
     @Override
@@ -64,6 +70,12 @@ public class CardViewFragment extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.card_view_player:
                 startActivity(new Intent(getContext(), BiliPlayerActivity.class));
+                break;
+            case R.id.card_view_lut:
+                startActivity(new Intent(getContext(), LutScriptActivity.class));
+                break;
+            case R.id.card_view_gpu_img:
+                startActivity(new Intent(getContext(), GpuImageActivity.class));
                 break;
         }
     }

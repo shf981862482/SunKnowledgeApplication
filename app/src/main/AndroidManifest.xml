@@ -70,7 +70,10 @@
         <activity
             android:name=".jni.JniHelloActivity"
             android:label="@string/title_activity_jni_hello" />
-        <activity android:name=".live.BiliPlayerActivity"></activity>
+        <activity android:name=".live.BiliPlayerActivity" />
+        <activity android:name=".live.BiliNodeActivity" />
+        <activity android:name=".activitys.LutScriptActivity" />
+        <activity android:name=".gpulutimage.GpuImageActivity"></activity>
     </application>
 
 </manifest>
