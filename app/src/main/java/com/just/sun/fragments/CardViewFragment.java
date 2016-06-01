@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.common.webview.WebViewUIManager;
 import com.just.sun.R;
 import com.just.sun.activitys.LutScriptActivity;
 import com.just.sun.gpulutimage.GpuImageActivity;
@@ -26,6 +27,7 @@ public class CardViewFragment extends Fragment implements View.OnClickListener {
     private CardView card_view_player;
     private CardView card_view_gpu_img;
     private CardView card_view_combo_click;
+    private CardView card_view_baidu;
 
 
     public CardViewFragment() {
@@ -63,6 +65,8 @@ public class CardViewFragment extends Fragment implements View.OnClickListener {
         card_view_player = (CardView) view.findViewById(R.id.card_view_player);
         card_view_gpu_img = (CardView) view.findViewById(R.id.card_view_gpu_img);
         card_view_combo_click = (CardView) view.findViewById(R.id.card_view_combo_click);
+        card_view_baidu = (CardView) view.findViewById(R.id.card_view_baidu);
+        card_view_baidu.setOnClickListener(this);
         card_view_combo_click.setOnClickListener(this);
         card_view_player.setOnClickListener(this);
         card_view_gpu_img.setOnClickListener(this);
@@ -83,6 +87,9 @@ public class CardViewFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.card_view_combo_click:
                 startActivity(new Intent(getContext(), ComboClickActivity.class));
+                break;
+            case R.id.card_view_baidu:
+                WebViewUIManager.openWebViewPage(getContext(),"www.baidu.com");
                 break;
         }
     }

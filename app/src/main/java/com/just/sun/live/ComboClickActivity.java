@@ -1,15 +1,14 @@
 package com.just.sun.live;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.common.base.BaseFragmentActivity;
 import com.common.widget.RoundProgressBar;
 import com.just.sun.R;
 
-public class ComboClickActivity extends Activity {
+public class ComboClickActivity extends BaseFragmentActivity {
 
     private RoundProgressBar circularProgress;
 

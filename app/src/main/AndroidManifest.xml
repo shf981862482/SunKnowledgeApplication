@@ -75,7 +75,11 @@
         <activity android:name=".live.BiliNodeActivity" />
         <activity android:name=".activitys.LutScriptActivity" />
         <activity android:name=".gpulutimage.GpuImageActivity" />
-        <activity android:name=".live.ComboClickActivity"></activity>
+        <activity android:name=".live.ComboClickActivity" />
+        <activity
+            android:name="com.common.webview.SunBrowserActivity"
+            android:launchMode="singleInstance"
+            android:process=":sun.webview" />
     </application>
 
 </manifest>

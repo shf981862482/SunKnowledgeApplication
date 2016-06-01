@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/loading_data_tips"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_gravity="center"
+              android:orientation="vertical"
+    >
+
+    <ProgressBar
+        android:id="@+id/load_more_list_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:indeterminateDrawable="@drawable/custom_progressbar_drawable"/>
+    <!--         android:indeterminateDrawable="@drawable/custom_progressbar_drawable"
+     -->
+
+    <TextView
+        android:id="@+id/tv_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="星云-文化娱乐第一平台"
+        android:textColor="#cccccc"
+        android:visibility="gone"/>
+
+</LinearLayout>

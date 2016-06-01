@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\WebDemo\\ijkplayer-master-demo\\ijkplayer-master-demo\\IjkplayerLib\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\WebDemo\\ijkplayer-master-demo\\ijkplayer-master-demo\\IjkplayerLib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
         "merged": "C:\\AndroidStudioProgram\\SunKnowledgeApplication\\IjkplayerLib\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
         "source": "C:\\AndroidStudioProgram\\SunKnowledgeApplication\\IjkplayerLib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
@@ -14,13 +10,5 @@
     {
         "merged": "C:\\AndroidStudioProgram\\SunKnowledgeApplication\\IjkplayerLib\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_btn_colored_material.xml",
         "source": "C:\\AndroidStudioProgram\\SunKnowledgeApplication\\IjkplayerLib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\WebDemo\\ijkplayer-master-demo\\ijkplayer-master-demo\\IjkplayerLib\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\WebDemo\\ijkplayer-master-demo\\ijkplayer-master-demo\\IjkplayerLib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "C:\\WebDemo\\ijkplayer-master-demo\\ijkplayer-master-demo\\IjkplayerLib\\build\\intermediates\\res\\merged\\release\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\WebDemo\\ijkplayer-master-demo\\ijkplayer-master-demo\\IjkplayerLib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable-v21\\abc_btn_colored_material.xml"
     }
 ]
