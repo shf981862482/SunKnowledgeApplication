@@ -15,6 +15,7 @@ import com.just.sun.activitys.LutScriptActivity;
 import com.just.sun.gpulutimage.GpuImageActivity;
 import com.just.sun.live.BiliPlayerActivity;
 import com.just.sun.live.ComboClickActivity;
+import com.just.sun.multiwindow.MultiWindowActivity;
 
 
 public class CardViewFragment extends Fragment implements View.OnClickListener {
@@ -28,6 +29,7 @@ public class CardViewFragment extends Fragment implements View.OnClickListener {
     private CardView card_view_gpu_img;
     private CardView card_view_combo_click;
     private CardView card_view_baidu;
+    private CardView card_view_multi;
 
 
     public CardViewFragment() {
@@ -66,6 +68,8 @@ public class CardViewFragment extends Fragment implements View.OnClickListener {
         card_view_gpu_img = (CardView) view.findViewById(R.id.card_view_gpu_img);
         card_view_combo_click = (CardView) view.findViewById(R.id.card_view_combo_click);
         card_view_baidu = (CardView) view.findViewById(R.id.card_view_baidu);
+        card_view_multi = (CardView) view.findViewById(R.id.card_view_multi);
+        card_view_multi.setOnClickListener(this);
         card_view_baidu.setOnClickListener(this);
         card_view_combo_click.setOnClickListener(this);
         card_view_player.setOnClickListener(this);
@@ -89,7 +93,10 @@ public class CardViewFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getContext(), ComboClickActivity.class));
                 break;
             case R.id.card_view_baidu:
-                WebViewUIManager.openWebViewPage(getContext(),"www.baidu.com");
+                WebViewUIManager.openWebViewPage(getContext(), "www.baidu.com");
+                break;
+            case R.id.card_view_multi:
+                startActivity(new Intent(getContext(), MultiWindowActivity.class));
                 break;
         }
     }
