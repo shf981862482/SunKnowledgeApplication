@@ -81,10 +81,9 @@
             android:launchMode="singleInstance"
             android:process=":sun.webview" />
         <activity android:name=".multiwindow.MultiWindowActivity" />
-        <activity
-            android:name=".multiwindow.activity.SecondMultiActivity"
-             />
-        <!--android:resizeableActivity="true"-->
+        <activity android:name=".multiwindow.activity.SecondMultiActivity" />
+        <!-- android:resizeableActivity="true" -->
+        <activity android:name=".dagger.activity.FruitActivity"></activity>
     </application>
 
 </manifest>

@@ -12,6 +12,7 @@ import com.just.sun.activitys.LoadingDialogActivity;
 import com.just.sun.activitys.PropertyAnimationActivity;
 import com.just.sun.activitys.SunDanmuActivity;
 import com.just.sun.activitys.ZanActivity;
+import com.just.sun.dagger.activity.FruitActivity;
 import com.just.sun.databinding.FragmentOtherBinding;
 import com.just.sun.jni.JniHelloActivity;
 import com.just.sun.live.LiveMainActivity;
@@ -66,6 +67,9 @@ public class OtherListener {
                     break;
                 case 10:
                     view.getContext().startActivity(new Intent(view.getContext(), JniHelloActivity.class));
+                    break;
+                case 11:
+                    view.getContext().startActivity(new Intent(view.getContext(), FruitActivity.class));
                     break;
             }
         }

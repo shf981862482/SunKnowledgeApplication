@@ -80,6 +80,7 @@ public class OtherFragment extends Fragment {
         model.items.add(new SimpleModel("node_media_live"));
         model.items.add(new SimpleModel("renderscrip_mono"));
         model.items.add(new SimpleModel("jni_hello"));
+        model.items.add(new SimpleModel("dagger"));
 
         listener = new OtherListener(model, binding);
     }
