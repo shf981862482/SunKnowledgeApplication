@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 
+import com.just.sun.GlideImage.RoundBorderActivity;
 import com.just.sun.activitys.DanmuActivity;
 import com.just.sun.activitys.FramlayoutActivity;
 import com.just.sun.activitys.LoadingActivity;
@@ -70,6 +71,9 @@ public class OtherListener {
                     break;
                 case 11:
                     view.getContext().startActivity(new Intent(view.getContext(), FruitActivity.class));
+                    break;
+                case 12:
+                    view.getContext().startActivity(new Intent(view.getContext(), RoundBorderActivity.class));
                     break;
             }
         }

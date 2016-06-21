@@ -81,6 +81,7 @@ public class OtherFragment extends Fragment {
         model.items.add(new SimpleModel("renderscrip_mono"));
         model.items.add(new SimpleModel("jni_hello"));
         model.items.add(new SimpleModel("dagger"));
+        model.items.add(new SimpleModel("RoundBoundGlide"));
 
         listener = new OtherListener(model, binding);
     }
