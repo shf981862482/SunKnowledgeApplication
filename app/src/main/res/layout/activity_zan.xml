@@ -6,6 +6,6 @@
     <RelativeLayout
         android:id="@+id/zan_container"
         android:layout_width="match_parent"
-        android:background="@drawable/beautiful"
+        android:background="@drawable/beautiful_b"
         android:layout_height="match_parent"/>
 </RelativeLayout>

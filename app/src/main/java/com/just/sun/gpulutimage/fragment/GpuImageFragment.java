@@ -1,34 +1,20 @@
 package com.just.sun.gpulutimage.fragment;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.just.sun.R;
-import com.just.sun.utils.GPUImageFilterTools;
 
-import java.util.LinkedList;
-import java.util.List;
-
-import jp.co.cyberagent.android.gpuimage.GPUImage;
-import jp.co.cyberagent.android.gpuimage.GPUImageColorInvertFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImageContrastFilter;
 import jp.co.cyberagent.android.gpuimage.GPUImageFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImageGammaFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImageHueFilter;
 import jp.co.cyberagent.android.gpuimage.GPUImageLookupFilter;
-import jp.co.cyberagent.android.gpuimage.GPUImagePixelationFilter;
 import jp.co.cyberagent.android.gpuimage.GPUImageView;
 
 public class GpuImageFragment extends Fragment {
@@ -70,7 +56,7 @@ public class GpuImageFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_gpu_image, container, false);
         gpuimage = (GPUImageView) view.findViewById(R.id.gpuimage);
         mFilter = null;//置空、不然不执行switchFilterTo
-        Bitmap bitmap = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.beautiful);
+        Bitmap bitmap = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.beautiful_b);
         gpuimage.setImage(bitmap);
         GPUImageLookupFilter amatorka = new GPUImageLookupFilter();
         amatorka.setBitmap(BitmapFactory.decodeResource(getContext().getResources(),resourceId));

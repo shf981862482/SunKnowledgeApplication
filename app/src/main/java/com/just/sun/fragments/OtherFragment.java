@@ -82,6 +82,7 @@ public class OtherFragment extends Fragment {
         model.items.add(new SimpleModel("jni_hello"));
         model.items.add(new SimpleModel("dagger"));
         model.items.add(new SimpleModel("RoundBoundGlide"));
+        model.items.add(new SimpleModel("内存泄漏"));
 
         listener = new OtherListener(model, binding);
     }

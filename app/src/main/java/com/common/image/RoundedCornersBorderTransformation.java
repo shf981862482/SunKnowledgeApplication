@@ -4,11 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
-import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Shader;
 
@@ -20,6 +16,7 @@ import com.bumptech.glide.load.resource.bitmap.BitmapResource;
 
 /**
  * Created by walkingMen on 2016/6/20.
+ * centerCrop will lose efficacy
  */
 public class RoundedCornersBorderTransformation implements Transformation<Bitmap> {
 
@@ -31,11 +28,18 @@ public class RoundedCornersBorderTransformation implements Transformation<Bitmap
     private int borderWidth;
     private int borderColor;
 
-    public RoundedCornersBorderTransformation(Context context, int radius, int margin,int borderColor,int borderWidth) {
-        this(Glide.get(context).getBitmapPool(), radius, margin,borderColor,borderWidth);
+    /**
+     * @param context
+     * @param radius
+     * @param margin
+     * @param borderColor 边框颜色 支持 context.getResources().getColor(R.color.xxx)
+     * @param borderWidth 边框宽度
+     */
+    public RoundedCornersBorderTransformation(Context context, int radius, int margin, int borderColor, int borderWidth) {
+        this(Glide.get(context).getBitmapPool(), radius, margin, borderColor, borderWidth);
     }
 
-    public RoundedCornersBorderTransformation(BitmapPool pool, int radius, int margin,int borderColor,int borderWidth) {
+    public RoundedCornersBorderTransformation(BitmapPool pool, int radius, int margin, int borderColor, int borderWidth) {
         mBitmapPool = pool;
         mRadius = radius;
         mDiameter = mRadius * 2;
@@ -61,8 +65,20 @@ public class RoundedCornersBorderTransformation implements Transformation<Bitmap
         paint.setAntiAlias(true);
         paint.setShader(new BitmapShader(source, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
         drawRoundRect(canvas, paint, width, height);
-        setBitmapBorder(canvas, width, height);
+
         return BitmapResource.obtain(bitmap, mBitmapPool);
+    }
+
+
+    private void drawRoundRect(Canvas canvas, Paint paint, float width, float height) {
+        float right = width - mMargin;
+        float bottom = height - mMargin;
+        setBitmapBorder(canvas, right, bottom);
+        float rightIn = width - mMargin - borderWidth;
+        float bottomIn = height - mMargin - borderWidth;
+        //画圆角图片、去除边框的宽度
+        canvas.drawRoundRect(new RectF(mMargin + borderWidth, mMargin + borderWidth, rightIn, bottomIn),
+                mRadius, mRadius, paint);
     }
 
     /**
@@ -70,21 +86,15 @@ public class RoundedCornersBorderTransformation implements Transformation<Bitmap
      *
      * @param canvas
      */
-    private void setBitmapBorder(Canvas canvas, float width, float height) {
+    private void setBitmapBorder(Canvas canvas, float right, float bottom) {
         Paint paint = new Paint();
         paint.setAntiAlias(true);//抗锯齿
         //设置边框颜色
         paint.setColor(borderColor);
-        paint.setStyle(Paint.Style.STROKE);
+//        paint.setStyle(Paint.Style.STROKE);
+        paint.setStyle(Paint.Style.FILL);
         //设置边框宽度
-        paint.setStrokeWidth(borderWidth);
-        canvas.drawRoundRect(new RectF(mMargin, mMargin, width, height), mRadius, mRadius, paint);
-    }
-
-    private void drawRoundRect(Canvas canvas, Paint paint, float width, float height) {
-        float right = width - mMargin;
-        float bottom = height - mMargin;
-
+//        paint.setStrokeWidth(borderWidth);
         canvas.drawRoundRect(new RectF(mMargin, mMargin, right, bottom), mRadius, mRadius, paint);
     }
 

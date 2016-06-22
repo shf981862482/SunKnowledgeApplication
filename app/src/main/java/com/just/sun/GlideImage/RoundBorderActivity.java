@@ -5,14 +5,10 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.drawable.GlideDrawable;
-import com.bumptech.glide.request.animation.GlideAnimation;
-import com.bumptech.glide.request.target.SimpleTarget;
 import com.common.image.RoundedCornersBorderTransformation;
 import com.just.sun.R;
+import com.walking_men.sun.sunmultilibrary.utils.DensityUtility;
 
-import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class RoundBorderActivity extends Activity {
     private ImageView imageView;
@@ -23,9 +19,13 @@ public class RoundBorderActivity extends Activity {
         setContentView(R.layout.activity_round_border);
         imageView = (ImageView) findViewById(R.id.img);
         Glide.with(this)
-                .load(R.drawable.beautiful)
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .bitmapTransform(new RoundedCornersBorderTransformation(RoundBorderActivity.this, 30, 0, R.color.colorPrimary, 10))
+                .load(R.drawable.beautiful_b)
+//                .diskCacheStrategy(DiskCacheStrategy.ALL)
+//                .centerCrop()
+        .bitmapTransform(new RoundedCornersBorderTransformation(RoundBorderActivity.this,
+                        DensityUtility.dip2px(RoundBorderActivity.this, 5), 0,
+                        getResources().getColor(R.color.primary),
+                        DensityUtility.dip2px(RoundBorderActivity.this, 1)))
                 .into(imageView);
     }
 }

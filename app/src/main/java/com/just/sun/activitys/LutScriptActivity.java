@@ -3,7 +3,6 @@ package com.just.sun.activitys;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.opengl.GLUtils;
 import android.os.Bundle;
 import android.support.v8.renderscript.Allocation;
 import android.support.v8.renderscript.Element;
@@ -33,7 +32,7 @@ public class LutScriptActivity extends Activity {
         findViewById(R.id.btn_lut).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mBitmapIn = loadBitmap(R.drawable.beautiful);
+                mBitmapIn = loadBitmap(R.drawable.beautiful_b);
                 mBitmapOut = Bitmap.createBitmap(mBitmapIn.getWidth(),
                         mBitmapIn.getHeight(), mBitmapIn.getConfig());
                 mRS = RenderScript.create(LutScriptActivity.this);

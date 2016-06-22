@@ -10,6 +10,7 @@ import com.just.sun.activitys.FramlayoutActivity;
 import com.just.sun.activitys.LoadingActivity;
 import com.just.sun.activitys.LoadingBasicActivity;
 import com.just.sun.activitys.LoadingDialogActivity;
+import com.just.sun.activitys.MemoryAnalyzeActivity;
 import com.just.sun.activitys.PropertyAnimationActivity;
 import com.just.sun.activitys.SunDanmuActivity;
 import com.just.sun.activitys.ZanActivity;
@@ -74,6 +75,9 @@ public class OtherListener {
                     break;
                 case 12:
                     view.getContext().startActivity(new Intent(view.getContext(), RoundBorderActivity.class));
+                    break;
+                case 13:
+                    view.getContext().startActivity(new Intent(view.getContext(), MemoryAnalyzeActivity.class));
                     break;
             }
         }

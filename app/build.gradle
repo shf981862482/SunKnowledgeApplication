@@ -86,6 +86,13 @@ dependencies {
     apt 'com.google.dagger:dagger-compiler:2.0'//指定注解处理器  不能用apt1.4 2.0.2 与databinding冲突
     //provided 'com.google.dagger:dagger-compiler:2.0.2'
     provided 'org.glassfish:javax.annotation:10.0-b28'  //添加android缺失的部分javax注解
+
+    //*******内存泄漏分析***
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.5.1@aar'
+
 }
 /*
 compile 'com.sun_multi:sunmultilibrary:0.0.3' have follow
